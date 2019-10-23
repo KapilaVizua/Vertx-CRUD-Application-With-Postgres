@@ -15,6 +15,7 @@
     <vertx.verticle>io.vertx.intro.first.MyFirstVerticle</vertx.verticle>
   </properties>
 
+
   <dependencies>
     <dependency>
       <groupId>io.vertx</groupId>
@@ -26,6 +27,20 @@
       <artifactId>vertx-rx-java2</artifactId>
       <version>${vertx.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-mysql-client</artifactId>
+      <version>4.0.0-milestone1</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.6</version>
+    </dependency>
+
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-config</artifactId>
@@ -57,8 +72,9 @@
       <artifactId>vertx-unit</artifactId>
       <version>${vertx.version}</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>
     <dependency>
+
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
       <version>2.4.0</version>

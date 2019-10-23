@@ -26,7 +26,7 @@ public class Article {
         
     }
 
-
+    //Json Object
     public Article(JsonObject json) {
         this(
             json.getInteger("id", -1),
